@@ -1,0 +1,119 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_typography.scss";
+@import "_others.scss";
+
+body{
+	font-family: 'source_sans_proR', "Lucida Grande", "Lucida Sans", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/*//////////////
+//   Header   //
+//////////////*/
+
+my-app >header{
+	position: relative;
+	background-color: $bg-top;
+	height: 60px;
+	color: $color-top;
+	z-index: 10;
+
+	div{
+		height: 100%;
+		
+		&>div{
+			padding-top: 20px;
+			
+		}
+
+	}
+	h2{
+		a{
+			&:hover{
+				text-decoration: none;
+				color: #337ab7;
+			}
+		}
+		padding: 12px 0 0;
+		font-size: 25px;
+		span{
+			color: white;
+		}
+	}
+
+	form{
+		position: relative;
+		span{
+			position: absolute;
+			top: 5px;
+			left: -30px;
+		}
+		input{
+			width: calc(100% - 20px);
+			vertical-align: middle;
+			padding: 0;
+			border: none;
+			background-color: transparent;
+			outline: none;
+		}
+	}
+}
+
+
+/*//////////////
+//  Content   //
+//////////////*/
+
+#app_content{
+	position: relative;
+	padding-left: 240px;
+	vertical-align: top;
+	height: 300vh;
+	
+	#search{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100%;
+		background-color: rgb(187, 211, 231);
+		padding-left: 240px;
+	}
+	header{
+		background-color: #fbfbfb;
+		border: 1px solid #f0f0f0;
+		padding: 27px;
+	    padding-bottom: 14px;
+	}
+	h1{
+		position: relative;
+		margin: 0;
+		margin-bottom: 14px;
+		padding-left: 80px;
+		border-top: 0;
+		font-size: 38px;
+		color: #444;
+		background: #fbfbfb;
+
+		svg{
+			position: absolute;
+			height: 38px;
+			width: 38px;
+			left: 10.5px;
+			top: -8px;
+			fill: #444;
+			stroke: #444;
+		}
+	}
+	
+	h2{
+		font-size: 2.11111rem;
+		color: #444;
+	}
+}
+#content{
+	padding: 40px;
+}

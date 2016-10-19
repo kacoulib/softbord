@@ -1,0 +1,42 @@
+/*//////////////
+//  Elements  //
+//////////////*/
+
+ul{
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+li{
+	vertical-align: top;
+	list-style: none;
+}
+a:hover, a:focus, a:active{
+	color: #337ab7;
+	text-decoration: none;
+}
+input[type="submit"]{
+	font-weight: 700;
+    padding: 6px 10px;
+    width: 20%;
+    border: none;
+	font-weight: 700;
+	background-color: #45BF55;
+}
+strong{
+	font-weight: 700;
+	color: rgb(65, 61, 51);
+}
+p{
+	margin-bottom: 10px;
+}
+
+
+
+/*//////////////
+//   Classes  //
+//////////////*/
+#nav_aside .active{
+	color: white;
+	/*opacity: 0;*/
+}
