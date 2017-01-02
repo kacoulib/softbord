@@ -6,7 +6,7 @@ import { FormsModule }   from '@angular/forms';
     templateUrl: './app/components/contact/contact.html',
     styleUrls: ['./app/components/contact/contact.css'],
 })
-export class ContactComponent {
+export class ContactCmp {
 	form: '';
 	values = '';
 	submited = false;

@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app/components/partials/nav.css'],
 	// providers: ['./app/components/partials/secondary/secondary.component.ts'],
 })
-export class NavComponent { }
+export class NavCmp { }

@@ -3,31 +3,49 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders }  from './app.routing';
 import { HttpModule, JsonpModule } from '@angular/http';
 
-import { AppComponent }  from './app.component';
-import { NavComponent } from './partials/nav.component';
-import { AboutComponent } from './about/about.component';
-import { ProjetsComponent } from './projets/projets.component';
-import { ContactComponent } from './contact/contact.component';
-import { FbBotComponent } from './__features__/fb_bot/fb_bot.component';
+// sevices
+import {ProjectService} from '/build/app/services/project.service';
+
+// components
+import { AppCmp }  from './app.component';
+import { NavCmp } from './partials/nav.component';
+import { HelloCmp } from './hello/hello.component';
+import { ProjectsCmp } from './projets/projets.component';
+import { SingleProjectCmp } from './projets/single.component';
+import { ContactCmp } from './contact/contact.component';
+import { FbBotCmp } from './__features__/fb_bot/fb_bot.component';
+
 
 
 @NgModule({
-  imports: [
+  imports:
+  [
   	BrowserModule,
   	routing,
-	HttpModule,
-	JsonpModule
+    HttpModule,
+    JsonpModule
 	],
 	
-  declarations: [
-  	AppComponent,
-  	NavComponent,
-  	AboutComponent,
-  	ProjetsComponent,
-  	ContactComponent,
-  	FbBotComponent
+  declarations:
+  [
+  	AppCmp,
+  	NavCmp,
+  	HelloCmp,
+    ProjectsCmp,
+  	SingleProjectCmp,
+  	ContactCmp,
+  	FbBotCmp
   ],
-  providers: [ appRoutingProviders ],
-  bootstrap: [ AppComponent ]
+
+  providers:
+  [
+    ProjectService,
+    appRoutingProviders
+  ],
+
+  bootstrap:
+  [
+    AppCmp
+  ]
 })
 export class AppModule { }

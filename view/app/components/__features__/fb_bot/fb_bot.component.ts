@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app/components/partials/nav.css'],	
 	// providers: ['./app/components/partials/secondary/secondary.component.ts'],
 })
-export class FbBotComponent {
+export class FbBotCmp {
 
 	input = '';
 	users = [{id : 0, name: 'softboard'}];
@@ -15,7 +15,6 @@ export class FbBotComponent {
 	typing = false;
 
 	constructor(){
-		console.log('zldks')
 	}
 
 	onKey(event:any){
@@ -58,7 +57,7 @@ export class FbBotComponent {
 	// }
 
 	// messagerIconClick(event: any){
-	// 	console.log(event.target.classList.value)
+	// 	// console.log(event.target.classList.value)
 		
 	// 	let elem =  document.getElementById('chat');
 

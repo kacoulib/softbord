@@ -6,6 +6,26 @@
 </header>
 <section id="content">
 	<ul>
+		<li *ngFor=" let project of projects">
+			<article>
+				<header>
+					<div class="imgContainer"><a href=""><img src="/assets/imgs/posts/{{project.img}}" alt=""></a></div>
+					<div class="summary">
+						<h2><a routerLink="{{project.slug}}">{{project.title}}</a></h2>
+						<div>
+							<span class="date"></span>
+							<span class="categories">
+								<a href="">{{project.category[0]}}</a>
+							</span>
+							<span class="commentaires"><a href="">{{project.nb_comments}} commentaires</a></span>
+						</div>
+					</div>
+				</header>
+				<div>
+					<p>{{project.content}}</p>
+				</div>
+			</article>
+		</li>
 		<li>
 			<article>
 				<header>

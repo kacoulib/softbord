@@ -26,7 +26,14 @@ my-app >header{
 		
 		&>div{
 			padding-top: 20px;
-			
+			ul li{
+				display: inline-block;
+				padding-right: 10px;
+
+				&:last-child{
+					padding-right: 0;
+				}
+			}
 		}
 
 	}
@@ -117,3 +124,5 @@ my-app >header{
 #content{
 	padding: 40px;
 }
+
+/* others */

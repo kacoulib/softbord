@@ -105,6 +105,11 @@ my-app > header {
     height: 100%; }
     my-app > header div > div {
       padding-top: 20px; }
+      my-app > header div > div ul li {
+        display: inline-block;
+        padding-right: 10px; }
+        my-app > header div > div ul li:last-child {
+          padding-right: 0; }
   my-app > header h2 {
     padding: 12px 0 0;
     font-size: 25px; }
@@ -171,3 +176,5 @@ my-app > header {
 
 #content {
   padding: 40px; }
+
+/* others */
